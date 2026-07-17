@@ -30,6 +30,11 @@ int main(void)
 
 bool prime(int number)
 {
+    // execlude 1 since it only divisable by one divisior
+    if (number == 1)
+    {
+        return false;
+    }
     // test if number is prime by divising form 2 up to Number
     const int RANGE_START = 2;
     for (int n = RANGE_START; n < number; n++)
